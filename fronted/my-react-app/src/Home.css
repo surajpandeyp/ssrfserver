@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page */
+.home {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+
+/* Product section */
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 260px;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #020617;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+.card button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.card button:hover {
+  background: #1e40af;
+}
+
+/* Stock / SSRF box */
+.stock-box {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 26px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.1);
+}
+
+.stock-box h3 {
+  font-size: 20px;
+  color: #020617;
+  margin-bottom: 6px;
+}
+
+.stock-box p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+/* Input */
+.stock-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.stock-box input:focus {
+  border-color: #2563eb;
+}
+
+/* Button */
+.stock-box button {
+  width: 100%;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.stock-box button:hover {
+  background: #15803d;
+}
+
+/* Result */
+.stock-box p:last-child {
+  margin-top: 18px;
+  background: #020617;
+  color: #38bdf8;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}

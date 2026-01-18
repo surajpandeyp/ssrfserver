@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function user(){
+        const name = "suraj";
+        const pass = "pas1234";
+
+        alert("user name and passwrd of this account is:" + name + "  " +pass);
+    }
+</script>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f4f6f8;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1e293b;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    color: #38bdf8;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+</style>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li onclick="user()">Users</li>
+            <li>Orders</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>120</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>45</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>₹25,000</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
